@@ -538,14 +538,14 @@ nav a:hover {
 }
 
 /* Desktop screens */
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   body {
     font-size: 1rem;
     border-top: 60px solid #e6625e;
   }
 
   header {
-    width: 800px;
+    width: 850px;
     margin: -60px auto 0 auto;
   }
 
@@ -576,13 +576,13 @@ nav a:hover {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 30px 0 0 20px;
+    padding: 0 20px;
     border-right: 1px solid #d1d5db;
     text-align: left;
   }
 
   main {
-    width: 798px;
+    width: 848px;
     margin: 0 auto;
     border-left: 1px solid #d1d5db;
     border-right: 1px solid #d1d5db;
@@ -614,7 +614,7 @@ nav a:hover {
   }
 
   footer {
-    width: 798px;
+    width: 848px;
     margin: 0 auto;
     border-left: 1px solid #d1d5db;
     border-right: 1px solid #d1d5db;
