@@ -577,7 +577,6 @@ nav a:hover {
     grid-column-start: 2;
     grid-column-end: 3;
     padding: 30px 0 0 20px;
-    border-left: 1px solid #d1d5db;
     border-right: 1px solid #d1d5db;
     text-align: left;
   }
