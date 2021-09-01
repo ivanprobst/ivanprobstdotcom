@@ -355,7 +355,7 @@ template {
 
 body {
   min-width: 500px;
-  font-family: arial;
+  font-family: helvetica;
   color: #374151;
   background: #f3f4f6;
   font-size: 1.2rem;
@@ -393,7 +393,8 @@ h1 {
   margin: 0;
   padding-left: 15px;
   font-weight: normal;
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-family: verdana;
   color: white;
   background: #e6625e;
 }
@@ -405,6 +406,7 @@ h2 {
   padding-left: 15px;
   font-weight: normal;
   font-size: 1.2rem;
+  font-family: verdana;
   color: white;
   background: #0bbcd6;
 }
@@ -561,14 +563,15 @@ nav a:hover {
     grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
-    padding: 10px 15px;
+    padding: 10px 10px;
+    height: 40px;
   }
   h2 {
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 2;
-    padding: 10px 15px;
+    padding: 10px 10px;
   }
 
   #introduction {
@@ -576,7 +579,6 @@ nav a:hover {
     grid-row-end: 4;
     grid-column-start: 2;
     grid-column-end: 3;
-    padding: 0 20px;
     border-right: 1px solid #d1d5db;
     text-align: left;
   }
