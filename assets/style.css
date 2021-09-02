@@ -361,13 +361,8 @@ body {
   font-size: 1.2rem;
 }
 
-a {
-  color: #0bbcd6;
-}
-
 strong {
   font-weight: normal;
-  color: #e6625e;
 }
 
 .quoted {
@@ -377,7 +372,7 @@ strong {
 
 header {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 25% 65% 10%;
   grid-template-rows: auto auto auto;
 }
 
@@ -396,27 +391,54 @@ h1 {
   font-size: 2rem;
   font-family: verdana;
   color: white;
-  background: #e6625e;
 }
 
 h2 {
   display: flex;
   align-items: center;
+  grid-column-start: 2;
+  grid-column-end: 4;
   margin: 0;
   padding-left: 15px;
   font-weight: normal;
   font-size: 1.2rem;
   font-family: verdana;
   color: white;
-  background: #0bbcd6;
 }
 
 #introduction {
   grid-column-start: 1;
-  grid-column-end: 3;
-  padding: 10px 20px;
+  grid-column-end: 4;
+  padding: 0 20px;
   background: white;
+  height: 100%;
   text-align: center;
+}
+
+#color-dice-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+#color-dice {
+  width: 30px;
+  height: 30px;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  background: none;
+  cursor: pointer;
+}
+button.rotateStart {
+  animation: rotation 1s 0s 1 ease-in, rotation 1s 1s 1 ease-out;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
 }
 
 main {
@@ -424,8 +446,8 @@ main {
 }
 
 section {
-  padding: 15px;
-  border-top: 15px solid #0bbcd6;
+  padding: 0 15px 15px 15px;
+  border-top: 15px solid;
   text-align: center;
 }
 
@@ -444,20 +466,15 @@ h3 {
 
 #skills i {
   font-size: 4rem;
-  color: #e6625e;
-  transition: color 0.5s ease;
 }
 #skills #soft i {
   font-size: 2.5rem;
-}
-#skills i:hover {
-  color: #df3732;
 }
 
 #skills hr {
   width: 70%;
   margin: 25px auto;
-  border-top: 1px solid #0bbcd6;
+  border-top: 1px solid;
 }
 
 .project {
@@ -487,13 +504,14 @@ h3 {
 
 .project > div > div {
   padding-left: 12px;
-  border-left: 1px solid #e6625e;
+  border-left: 1px solid;
 }
 
 #interests {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto;
+  align-items: center;
   padding: 0;
 }
 
@@ -515,7 +533,6 @@ h3 {
 footer {
   display: grid;
   grid-template-columns: 40% 60%;
-  background: #e6625e;
 }
 
 footer p {
@@ -543,7 +560,7 @@ nav a:hover {
 @media (min-width: 850px) {
   body {
     font-size: 1rem;
-    border-top: 60px solid #e6625e;
+    border-top: 60px solid;
   }
 
   header {
@@ -559,8 +576,6 @@ nav a:hover {
   }
 
   h1 {
-    grid-row-start: 1;
-    grid-row-end: 2;
     grid-column-start: 1;
     grid-column-end: 3;
     padding: 10px 10px;
@@ -578,7 +593,8 @@ nav a:hover {
     grid-row-start: 2;
     grid-row-end: 4;
     grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-end: 4;
+    padding-bottom: 0;
     border-right: 1px solid #d1d5db;
     text-align: left;
   }
