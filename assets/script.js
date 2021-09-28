@@ -2,7 +2,7 @@
 const colorSchemes = [
   {primary: '#fb9b2a', secondary: '#0c00ff'},
   {primary: '#e44a66', secondary: '#78a15d'},
-  {primary: '#283470', secondary: '#15a29c'},
+  {primary: '#354596', secondary: '#15a29c'},
   {primary: '#126b8b', secondary: '#feb904'},
   {primary: '#e6625e', secondary: '#0bbcd6'},
   {primary: '#005397', secondary: '#ff8788'}
@@ -64,6 +64,11 @@ const schemeSelectors = [
     color: 'secondary'
   },
   {
+    element: 'h4',
+    style: 'color',
+    color: 'primary'
+  },
+  {
     element: 'section',
     style: 'borderTopColor',
     color: 'secondary'
@@ -89,7 +94,7 @@ let throwIsRunning = false;
 const throwColorDice = () => {
   if(!throwIsRunning){
     throwIsRunning = true;
-    const currentColorScheme = Math.floor(Math.random() * 6);
+    const currentColorScheme = Math.floor(Math.random() * colorSchemes.length);
 
     applyColorScheme(currentColorScheme);
 
