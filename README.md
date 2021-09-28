@@ -4,7 +4,7 @@ My personal website – check it out at https://ivanprobst.com
 
 ## Stack
 
-This website uses vanilla HTML + CSS (with [normalize.css](https://necolas.github.io/normalize.css/) reset).
+This website uses vanilla HTML + CSS (with [normalize.css](https://necolas.github.io/normalize.css/) reset) + JavaScript.
 
 Code is maintained on GitHub, and hosted as a GitHub Page.
 
@@ -18,15 +18,11 @@ Other tools:
 
 ### Colors
 
-- Theme red: #e6625e (dark variant: #df3732)
-- Theme blue: #0bbcd6
-- Dark gray: #374151 (main texts)
-- Mid gray: #9ca3af (lighter text)
-- Light gray: #f3f4f6 (background)
+Various color schemes, located in `assets/script.js`.
 
 ### Font
 
-- Arial
+- helvetica
 
 ### Responsive break points
 

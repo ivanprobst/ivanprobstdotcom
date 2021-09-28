@@ -446,7 +446,7 @@ main {
 }
 
 section {
-  padding: 0 15px 15px 15px;
+  padding: 0 20px 15px 20px;
   border-top: 15px solid;
   text-align: center;
 }
@@ -454,21 +454,30 @@ section {
 h3 {
   font-size: 1.5rem;
 }
-
 #skills ul {
   display: grid;
-  grid-template-columns: 31% 31% 31%;
-  column-gap: 3%;
+  grid-template-columns: 23% 23% 23% 23%;
+  column-gap: 2.6%;
   margin: 0 auto;
   padding: 0;
   list-style-type: none;
 }
+#skills ul#soft {
+  grid-template-columns: 29% 29% 29%;
+  column-gap: 6.3%;
+}
 
 #skills i {
-  font-size: 4rem;
-}
-#skills #soft i {
   font-size: 2.5rem;
+}
+
+#skills h4 {
+  margin-bottom: 0.4rem;
+  font-weight: normal;
+}
+
+#skills p {
+  margin-top: 0.4rem;
 }
 
 #skills hr {
@@ -604,10 +613,6 @@ nav a:hover {
     margin: 0 auto;
     border-left: 1px solid #d1d5db;
     border-right: 1px solid #d1d5db;
-  }
-
-  #skills ul {
-    width: 90%;
   }
 
   .project {
