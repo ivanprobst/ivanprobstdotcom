@@ -489,6 +489,7 @@ h3 {
 .project {
   display: grid;
   grid-template-columns: 100%;
+  margin-bottom: 3rem;
 }
 
 .project > a {
