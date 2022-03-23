@@ -366,7 +366,7 @@ strong {
 }
 
 .quoted {
-  color: #9ca3af;
+  color: #6F747D;
   font-style: italic;
 }
 
@@ -429,6 +429,7 @@ h2 {
   background: none;
   cursor: pointer;
 }
+#color-dice span {visibility: hidden}
 button.rotateStart {
   animation: rotation 1s 0s 1 ease-in, rotation 1s 1s 1 ease-out;
 }
@@ -509,7 +510,7 @@ h3 {
 .project h4 > span {
   font-weight: normal;
   font-size: 0.8rem;
-  color: #9ca3af;
+  color: #6F747D;
 }
 
 .project > div > div {
